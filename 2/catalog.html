@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -6,7 +6,6 @@
   <base href="https://htmlacademy-htmlcss.github.io/2122871-sedona-34/2/">
 </head>
 <body>
-
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="#">
@@ -49,7 +48,6 @@
       </nav>
     </nav>
   </header>
-
   <main class="filter-hotel">
     <div class="filter-content">
       <header class="filter-header">
@@ -114,23 +112,192 @@
               </li>
             </ul>
         </fieldset>
+        <fieldset class="filter-price">
+          <legend class="filter-price-title">Стоимость,₽</legend>
+          <div class="filter-price-rectangle">
+            <label class="filter-price-label">
+              <input class="label-input" type="number" name="min-price" value="0">от
+            </label>
+            <label class="filter-price-label">
+              <input class="label-input" type="number" name="max-price" value="9000">до
+            </label>
+            <label class="filter-price-label">
+              <input class="label-input-range" type="range" name="range-price" min="0" max="9000">
+            </label>
+          </div>
+          <div class="filter-button">
+              <input class="filter-button-apply" type="button" value="ПРИМЕНИТЬ">
+              <input class="filter-button-reset" type="reset" value="Сбросить">
+          </div>
+        </fieldset>
+      </section>
+      <section class="main-catalog">
+        <fieldset class="main-catalog-sorting">
+          <h2 class="sorting-title">Найдено гостиниц: 38</h2>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+          </select>
+          <a href="#" class="button">
+            <span class="visually-hidden">Мелкие значки</span>
+          </a>
+          <a href="#" class="button-larg">
+            <span class="visually-hidden">Крупные значки</span>
+          </a>
+          <a href="#" class="button-list">
+            <span class="visually-hidden">Список</span>
+          </a>
+        </fieldset>
+        <ul class="main-catalog-list">
+          <li class="catalog-list-card">
+            <a class="list-card-link" href="#">
+              <img class="list-card-image" src="#" alt="Название гостиницы Amara Resort & Spa">
+              <h3 class="list-card-title">Amara Resort & Spa</h3>
+            </a>
+            <p class="list-card-category">Гостиница</p>
+            <p class="list-card-price"> От 4000 ₽</p>
+            <form class="list-card-button" action="https://echo.htmlacademy.ru" method="post">
+              <button type="submit">Подробнее</button>
+            </form>
+            <form class="list-card-button" action="https://echo.htmlacademy.ru" method="post">
+              <button type="submit">В избранное</button>
+            </form>
+            <!-- не могу понять как звезды разметить?Понимаю что далее через CSS, но сейчас...? -->
+            <div class="rating-stars">
+              <span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span>
+            </div>
+            <div class="rating-number">
+              <span>РЕЙТИНГ:8,5</span>
+            </div>
+          </li>
+          <li class="catalog-list-card">
+            <a class="list-card-link" href="#">
+              <img class="list-card-image" src="#" alt="Название гостиницы Villas at Poco Diablo">
+              <h3 class="list-card-title">Villas at Poco Diablo</h3>
+            </a>
+            <p class="list-card-category">Гостиница</p>
+            <p class="list-card-price"> От 5000 ₽</p>
+            <form class="list-card-button" action="#">
+              <button type="submit">Подробнее</button>
+            </form>
+            <form class="list-card-button" action="https://echo.htmlacademy.ru" method="post">
+              <button type="submit">В избранное</button>
+            </form>
+            <div class="rating-stars">
+              <span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span>
+            </div>
+            <div class="rating-number">
+              <span>РЕЙТИНГ:9,2</span>
+            </div>
+          </li>
+          <li class="catalog-list-card">
+            <a class="list-card-link" href="#">
+              <img class="list-card-image" src="#" alt="Название гостиницы Desert Quail Inn">
+              <h3 class="list-card-title">Desert Quail Inn</h3>
+            </a>
+            <p class="list-card-category">Гостиница</p>
+            <p class="list-card-price"> От 2500 ₽</p>
+            <form class="list-card-button" action="#">
+              <button type="submit">Подробнее</button>
+            </form>
+            <form class="list-card-button" action="https://echo.htmlacademy.ru" method="post">
+              <button type="submit">В избранное</button>
+            </form>
+            <div class="rating-stars">
+              <span>&#9733</span><span>&#9733</span><span>&#9733</span>
+            </div>
+            <div class="rating-number">
+              <span>РЕЙТИНГ:6,9</span>
+            </div>
+          </li>
+          <li class="catalog-list-card">
+            <a class="list-card-link" href="#">
+              <img class="list-card-image" src="#" alt="Название гостиницы GreenTree Inn">
+              <h3 class="list-card-title">GreenTree Inn</h3>
+            </a>
+            <p class="list-card-category">Гостиница</p>
+            <p class="list-card-price"> От 1500 ₽</p>
+            <form class="list-card-button" action="#">
+              <button type="submit">Подробнее</button>
+            </form>
+            <form class="list-card-button" action="https://echo.htmlacademy.ru" method="post">
+              <button type="submit">В избранное</button>
+            </form>
+            <div class="rating-stars">
+              <span>&#9733;</span><span>&#9733;</span>
+            </div>
+            <div class="rating-number">
+              <span>РЕЙТИНГ:5,0</span>
+            </div>
+          </li>
+        </ul>
+        <!-- в качестве эксперимента <hr>)) -->
+        <hr>
+        <ul class="catalog-pagination">
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-link" href="#">1</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-link" href="#">2</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-link" href="#">3</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-link" href="#">4</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-link" href="#">...</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-link" href="#">10</a>
+          </li>
+        </ul>
+        <label class="label-page-count" for="page-count">Гостиниц на странице:</label>
+        <input class="input-page-count" type="number" id="page-count" name="page-count" min="4" max="10" value="4">
+      </section>
+      <section class="subscribe-newsletter">
+        <h2 class="subscribtion">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="newsletter-email" class="visually-hidden">Электронная почта</label>
+          <input class="email-input" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email" required>
+          <button class="newsletter-button" type="submit">Подписаться</button>
+        </form>
       </section>
     </div>
   </main>
-
-  <select class="select-control" aria-label="Сортировка">
-    <option value="cheap">Сначала дешевые</option>
-  </select>
-
-  <a href="#" class="button">
-    <span class="visually-hidden">Мелкие значки</span>
-  </a>
-  <a href="#" class="button-larg">
-    <span class="visually-hidden">Крупные значки</span>
-  </a>
-  <a href="#" class="button-list">
-    <span class="visually-hidden">Список</span>
-  </a>
-
+  <!-- подвал -->
+  <footer class="page-footer">
+    <div class="page-footer-container">
+      <section class="footer-social">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="footer-social-link footer-social-vk" href="https://vk.com/htmlacademy" target="_blank">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link footer-social-t.me" href="https://t.me/htmlacademy" target="_blank">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link footer-social-you" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="contact-phone">
+        <a class="footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </div>
+      <div class="htmlacademy-item">
+        <a class="htmlacademy-link footer-htmlacademy-link" href="https://htmlacademy.ru/" target="_blank">
+          <span class="visually-hidden">htmlacademy</span>
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
-</html> -->
+</html>
